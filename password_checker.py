@@ -1,9 +1,4 @@
-import re
-
-
-def checker(password):
-    pattern = re.compile(r"^[A-Za-z0-9_-!@#$%&]{8,}$")
-    return print(pattern.match(password))
-
-
-checker(input("Enter password: "))
+username = input('Enter your username: ')
+password = input('Enter your password: ')
+password_length = len(password) * '*'
+print(f'{ username }, your passowrd is { password_length }.')
